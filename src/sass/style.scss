@@ -8,10 +8,22 @@ Description: Advanced. Dry. Responsive Typography.
 Version: 1.0.1
 */
 
-@import "typography";
-@import "colors";
-@import "buttons";
-@import "steps-section";
-@import "pricing";
-@import "gravity-forms";
-@import "animations";
+// Import @use "file" as name; for naming .variable 
+// OR
+// @use "file" as *; to remove name entirely 
+
+// USE is only accessable within current file
+// Abstract FILES
+@use "abstracts/animations";
+@use "abstracts/colors";
+
+//Base FILES 
+@use "base/Typography";
+
+//Component FILES
+@use "components/buttons";
+
+// Layout FILES
+@use "layouts/gravity-forms";
+@use "layouts/pricing";
+@use "layouts/steps-section";
