@@ -1,0 +1,246 @@
+/*
+Theme Name: Fundr Theme
+Theme URI: https://www.fundertading.com
+Template: Divi
+Author: Eamon McHugh
+Author URI: https://www.linkedin.com/in/eamon-mchugh/
+Description: Advanced. Dry. Responsive Typography.
+Version: 1.0.1
+*/
+body {
+  font-family: "TT Commons Regular", Helvetica, Arial, Lucida, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  font-size: clamp(42px, 5vw + 1rem, 72px);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: clamp(24px, 2vw + 1rem, 36px);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: clamp(20px, 1vw + 1rem, 28px);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: clamp(56px, 6vw + 1rem, 106px);
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+p {
+  font-size: clamp(18px, 0.5vw + 1rem, 24px);
+  line-height: 1;
+}
+
+.button-primary {
+  display: inline-block;
+  font-family: var(--ff-body);
+  font-size: var(--fs-400);
+  line-height: 1.6;
+  padding: 15px 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  color: white;
+  background-color: #23e17c;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.button-primary:active {
+  transform: translateY(2px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-secondary {
+  display: inline-block;
+  font-family: var(--ff-body);
+  font-size: var(--fs-400);
+  line-height: 1.6;
+  padding: 10px 30px;
+  color: #000;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.button-secondary:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.steps--grid {
+  background: #eee;
+  background-clip: border-box;
+  z-index: 1;
+  width: 100%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: auto repeat(8, 1fr) auto;
+  grid-template-rows: repeat(8, auto);
+  justify-items: center;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 5vh;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  justify-items: bottom;
+  z-index: 3;
+  align-items: center;
+  height: 100%;
+}
+.item--1 {
+  grid-column: 3/9;
+  grid-row: 1/2;
+}
+.item--2 {
+  grid-column: 3/6;
+  grid-row: 3/4;
+}
+.item--3 {
+  grid-column: 6/9;
+  grid-row: 3/4;
+}
+.item--4 {
+  grid-column: 6/9;
+  grid-row: 5/6;
+}
+.item--5 {
+  grid-column: 3/6;
+  grid-row: 5/6;
+}
+.item--6 {
+  grid-column: 3/6;
+  grid-row: 7/8;
+}
+.item--7 {
+  grid-column: 6/9;
+  grid-row: 7/8;
+}
+.item--8 {
+  width: 100%;
+  max-width: 100% !important;
+  background-color: #000;
+  grid-column: 5/11;
+  grid-row: 2/8;
+  height: 75% !important;
+  margin-bottom: auto !important;
+  z-index: 1;
+}
+.item--line--1 {
+  grid-row: 4/5;
+  grid-column: 5/9;
+}
+.item--line--2 {
+  grid-row: 6/7;
+  grid-column: 1/6;
+}
+
+.price--card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.price--card .span--2 {
+  grid-column: 1 span 2;
+}
+
+input {
+  accent-color: #1f99f3;
+}
+
+.gform_title {
+  display: none;
+}
+
+#gform_1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.gform_body {
+  width: 80% !important;
+}
+
+#field_1_4 {
+  padding: 0;
+}
+
+input#input_1_4 {
+  height: 60px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.16), inset 3px 0px 6px #ffffff;
+}
+
+#place-holder {
+  font-size: clamp(20px, 1vw + 1rem, 28px);
+  font-size: clamp(20px, 1vw + 1rem, 28px);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.gform_footer.top_label {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+input#gform_submit_button_1 {
+  cursor: pointer;
+  padding: 0px 20px 0px 20px;
+  border-radius: 3px;
+  height: 60px;
+  background: #23e17c;
+  color: white;
+  border: none;
+  font-size: clamp(16px, 0.5vw + 1rem, 18px);
+  line-height: 1;
+  margin: 0;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.16);
+}
+
+.gform_wrapper .gf_simple_horizontal {
+  margin: 0;
+  width: 110%;
+}
+
+@-webkit-keyframes UpAndDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes UpAndDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+.animated--upanddown {
+  -webkit-animation: 5s ease-in-out 0.6s infinite UpAndDown;
+          animation: 5s ease-in-out 0.6s infinite UpAndDown;
+}
