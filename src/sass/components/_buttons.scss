@@ -47,16 +47,63 @@
     cursor: pointer;
     outline: none;
 
-    &:hover {
-        // transform: translateY(-3px);
-        // background-color: $color-primary;
-        // color: white;
-        // box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-        // color: #fff;
-    }
+    // &:hover {
+    // transform: translateY(-3px);
+    // background-color: $color-primary;
+    // color: white;
+    // box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    // color: #fff;
+    // }
 
     &:active {
         transform: translateY(2px);
         box-shadow: none;
     }
+}
+
+// Radial Active SECTION
+.price--switch--box {
+
+    span {
+        color: $color-primary;
+    }
+}
+
+.radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+
+    &--input {
+        display: none;
+
+    }
+
+    &--radio {
+        width: 1.75em;
+        height: 1.75em;
+        border: 0;
+        border-radius: 50%;
+        margin-right: 10px;
+        background-color: $color-grey;
+        box-shadow: inset 0px 3px 6px rgba($color: #000000, $alpha: .16);
+        box-sizing: border-box;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: $color-primary;
+            border-radius: 50%;
+            transform: scale(0);
+            transition: transform 0.15s;
+            box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: .16);
+        }
+    }
+}
+
+.radio--input:checked+.radio--radio::after {
+    transform: scale(1);
 }
