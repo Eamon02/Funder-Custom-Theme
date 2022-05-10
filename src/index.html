@@ -8,20 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script>
-        function switchPrice(x) {
-            if (x == 0) {
-                console.log("show")
-                $(".steps--grid").css("display", "grid");
-                $(".steps--grid--2").css("display", "none");
-            } else {
-                console.log("show Monthly")
-                $(".steps--grid").css("display", "none");
-                $(".steps--grid--2").css("display", "block");
-                return
-            }
-        }
-    </script>
     <title>Fundr Test Doc</title>
 </head>
 
@@ -55,7 +41,7 @@
             </h2>
         </label>
     </div>
-    <div class="steps--grid">
+    <div class="steps--grid quarterly--prices">
         <div class="item item--1">TITLE</div>
         <div class="item item--2">image-1</div>
         <div class="item item--3">text-1</div>
@@ -65,7 +51,7 @@
         <div class="item item--7">text-3</div>
         <div class="item item--8"></div>
     </div>
-    <div class="steps--grid--2" style="display: none; background-color: red;">
+    <div class="steps--grid--2 monthly--prices" style="display: none; background-color: red;">
         <div class="item item--1">TITLE</div>
         <div class="item item--2">image-1</div>
         <div class="item item--3">text-1</div>
@@ -76,5 +62,6 @@
         <div class="item item--8"></div>
     </div>
 </body>
+<script src="js/switchPrice.js"></script>
 
 </html>
