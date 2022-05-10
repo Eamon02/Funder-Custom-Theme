@@ -8,7 +8,21 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <script>
+        function switchPrice(x) {
+            if (x == 0) {
+                console.log("show")
+                $(".steps--grid").css("display", "grid");
+                $(".steps--grid--2").css("display", "none");
+            } else {
+                console.log("show Monthly")
+                $(".steps--grid").css("display", "none");
+                $(".steps--grid--2").css("display", "block");
+                return
+            }
+        }
+    </script>
+    <title>Fundr Test Doc</title>
 </head>
 
 <body>
@@ -24,7 +38,7 @@
     <button class="button-secondary animated--upanddown"> Click me</button>
     <div class="price--switch--box">
         <label for="monthly" class="radio">
-            <input type="radio" name="myRadioField" id="monthly" class="radio--input">
+            <input type="radio" name="myRadioField" id="monthly" class="radio--input" onclick="switchPrice(1)">
             <div class="radio--radio">
             </div>
             <h2>
@@ -32,7 +46,8 @@
             </h2>
         </label>
         <label for="quarterly" class="radio">
-            <input type="radio" name="myRadioField" id="quarterly" class="radio--input" checked="checked">
+            <input type="radio" name="myRadioField" onclick="switchPrice(0)" id="quarterly" class="radio--input"
+                checked="checked">
             <div class="radio--radio">
             </div>
             <h2>
@@ -50,7 +65,7 @@
         <div class="item item--7">text-3</div>
         <div class="item item--8"></div>
     </div>
-    <div class="steps--grid--2">
+    <div class="steps--grid--2" style="display: none; background-color: red;">
         <div class="item item--1">TITLE</div>
         <div class="item item--2">image-1</div>
         <div class="item item--3">text-1</div>
@@ -60,17 +75,6 @@
         <div class="item item--7">text-3</div>
         <div class="item item--8"></div>
     </div>
-    <script>
-        // $('#quarterly').click(function () {
-        //     $('#steps--grid').show();
-        //     $('#steps--grid--2').hide()
-        // });
-        $('#monthly').click(function () {
-            console.log("firing monthly click")
-            $('#steps--grid--2').hide();
-            $('#steps--grid').hide()
-        });
-    </script>
 </body>
 
 </html>
