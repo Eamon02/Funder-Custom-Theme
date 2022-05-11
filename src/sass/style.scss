@@ -14,16 +14,13 @@ Description: Advanced. Dry. Responsive Typography.
 Version: 1.0.1
 */
 // Abstract FILES
-@use "abstracts/animations";
-@use "abstracts/colors";
+@use "abstracts/_abstracts";
 
 //Base FILES 
-@use "base/Typography";
+@use "base/_base";
 
 //Component FILES
-@use "components/buttons";
+@use "components/_components";
 
 // Layout FILES
-@use "layouts/gravity-forms";
-@use "layouts/pricing";
-@use "layouts/steps-section";
+@use "layouts/_layouts";

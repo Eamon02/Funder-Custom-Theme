@@ -1,12 +1,16 @@
-function switchPrice(x) {
-    if (x == 0) {
-        console.log("show Quarterly")
-        $(".quartely--prices").css("display", "block !important");
-        $(".monthly--prices").css("display", "none !important");
-    } else {
-        console.log("show Monthly")
-        $(".quarterly--prices").css("display", "none !important");
-        $(".monthly--prices").css("display", "block !important");
-        return
-    }
-}
+$(document).ready(function () {
+    console.log("ready function");
+    $(".monthly--prices").hide();
+});
+$(document).ready(function () {
+    $('#quarterly').click(function () {
+        $('.quarterly--prices').show();
+        $('.monthly--prices').hide();
+    })
+});
+$(document).ready(function () {
+    $('#monthly').click(function () {
+        $('.quarterly--prices').hide();
+        $('.monthly--prices').show();
+    })
+});
