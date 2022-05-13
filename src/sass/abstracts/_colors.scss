@@ -4,13 +4,9 @@ $color-secondary: #1f99f3;
 $color-tertiary: #728BA5;
 $color-grey: #D8D8DB;
 
-@mixin color-gradient-green {
-    background: rgb(35, 225, 124);
-    background: -moz-linear-gradient(184deg, rgba(35, 225, 124, 1) 0%, rgba(62, 224, 138, 1) 12%, rgba(98, 222, 157, 1) 35%, rgba(44, 225, 129, 1) 64%, rgba(106, 240, 168, 1) 80%, rgba(38, 225, 126, 1) 100%);
-    background: -webkit-linear-gradient(184deg, rgba(35, 225, 124, 1) 0%, rgba(62, 224, 138, 1) 12%, rgba(98, 222, 157, 1) 35%, rgba(44, 225, 129, 1) 64%, rgba(106, 240, 168, 1) 80%, rgba(38, 225, 126, 1) 100%);
-    background: linear-gradient(184deg, rgba(35, 225, 124, 1) 0%, rgba(62, 224, 138, 1) 12%, rgba(98, 222, 157, 1) 35%, rgba(44, 225, 129, 1) 64%, rgba(106, 240, 168, 1) 80%, rgba(38, 225, 126, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#23e17c", endColorstr="#26e17e", GradientType=1);
-}
+// @mixin color-gradient-green {
+
+// }
 
 //Font Colors
 $text-color-primary: #191B1D;
