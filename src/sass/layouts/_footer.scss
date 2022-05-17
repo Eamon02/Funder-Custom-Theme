@@ -11,11 +11,9 @@
         grid-auto-rows: 150px;
         margin: 0 auto;
     }
-
-    &--block--1 {}
-
-    &--block--2 {}
-
-    &--block--3 {}
-
+    
+    &--menue>*:hover{
+    color:white;
+    text-decoration:underline; 
+    }
 }
