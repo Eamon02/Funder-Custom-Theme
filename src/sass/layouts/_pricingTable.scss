@@ -3,18 +3,31 @@
 
 // Pricing Grid SECTION
 .pricing--table {
+    &--wrapper {
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: minmax(300px, 500px);
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+    @media only screen and (min-width: 980px) {
 
     &--wrapper {
         max-width: 1100px;
         margin: auto;
         display: grid;
-        // gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         align-items: center;
         justify-items: center;
         justify-content: center;
 
     }
+    &--card--2{
+        z-index: unset;
+    }
+}
 
     &--card {
         cursor: pointer;
@@ -28,8 +41,6 @@
         transition: 0.9s;
 
         &--2 {
-            z-index: 2;
-
             &::before {
                 content: "Best Value";
                 color: white;
