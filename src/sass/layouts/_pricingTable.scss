@@ -90,14 +90,13 @@
     &--deals {
         margin-top: 10%;
         display: grid;
-        justify-content: space-evenly;
+        justify-content: space-around;
         grid-template-columns: auto auto;
         font-size: 18px;
         justify-items: center;
 
         &--titles {
             display: grid;
-            // grid-template-columns: auto auto;
             align-items: center;
             justify-items: start;
             font-size: 14px;
