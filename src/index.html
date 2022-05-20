@@ -1,250 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Fundr Test Doc</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Fundr Test Doc</title>
-</head>
-
-<body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus quidem itaque asperiores corrupti accusantium
-        accusamus voluptates, nostrum ab!</h2>
-    <h3>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptate.
-    </h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro modi tempora voluptatem fugiat delectus
-        eveniet. Assumenda officiis quibusdam, beatae minima aspernatur nesciunt quos sint, laudantium eveniet error
-        corporis consectetur.</p>
-    <button class="button-primary"> Click me</button>
-    <button class="button-secondary animated--upanddown"> Click me</button>
-    <div class="price--switch--box">
-        <label for="monthly" class="radio">
-            <input type="radio" name="myRadioField" id="monthly" class="radio--input">
-            <div class="radio--radio">
-            </div>
-            <h2>
-                1 Month
-            </h2>
-        </label>
-        <label for="quarterly" class="radio">
-            <input type="radio" name="myRadioField" id="quarterly" class="radio--input" checked="checked">
-            <div class="radio--radio">
-            </div>
-            <h2>
-                3 Months <span>(33% off)</span>
-            </h2>
-        </label>
-    </div>
-    <div class="steps--grid quarterly--prices">
-        <div class="item item--1">TITLE</div>
-        <div class="item item--2">image-1</div>
-        <div class="item item--3">text-1</div>
-        <div class="item item--4">image-2</div>
-        <div class="item item--5">text-2</div>
-        <div class="item item--6">image-3</div>
-        <div class="item item--7">text-3</div>
-        <div class="item item--8"></div>
-    </div>
-    <div class="steps--grid--2 monthly--prices" style="display: none; background-color: red;">
-        <div class="item item--1">TITLE</div>
-        <div class="item item--2">image-1</div>
-        <div class="item item--3">text-1</div>
-        <div class="item item--4">image-2</div>
-        <div class="item item--5">text-2</div>
-        <div class="item item--6">image-3</div>
-        <div class="item item--7">text-3</div>
-        <div class="item item--8"></div>
-    </div>
-    <section class="quarterly--prices">
-        <div class="pricing--table--wrapper">
-            <div class="pricing--table--card">
-                <h2 class="pricing--table--title">Basic</h2>
-                <div class="pricing--table--price pricing--table--price--basic">
-                    <h1>$198</h1>
-                    <p>/mo</p>
-                </div>
-                <div class="pricing--table--deals">
-                    <div class="pricing--table--deals--titles">
-                        <p>Buying Power</p>
-                        <p>Profit Target</p>
-                        <p>Daily Max Loss</p>
-                        <p>Max Drawdown</p>
-                        <p>Size per Symbol</p>
-                        <p>Minimum Trades</p>
-                    </div>
-                    <div class="pricing--table--deals--right">
-                        <p>$25,000</p>
-                        <p>$1,500</p>
-                        <p>$200</p>
-                        <p>$1,000</p>
-                        <p>300 Shares</p>
-                        <p>200 Trades</p>
-                    </div>
-                    <button class="pricing--table--button button-primary pricing--table--button--basic">Click
-                        me</button>
-                </div>
-            </div>
-            <div class="pricing--table--card pricing--table--card--2">
-                <h2 class="pricing--table--title pricing--table--title--2">Standard</h2>
-                <div class="pricing--table--price pricing--table--price--2">
-
-                    <h1>$333
-                    </h1>
-                    <p>/mo</p>
-                </div>
-                <div class="pricing--table--deals pricing--table--deals--2">
-                    <div class="pricing--table--deals--titles">
-                        <p>Buying Power</p>
-                        <p>Profit Target</p>
-                        <p>Daily Max Loss</p>
-                        <p>Max Drawdown</p>
-                        <p>Size per Symbol</p>
-                        <p>Minimum Trades</p>
-                    </div>
-                    <div class="pricing--table--deals--right">
-                        <p>$100,000</p>
-                        <p>$6,000</p>
-                        <p>$500</p>
-                        <p>$3,000</p>
-                        <p>1,000 Shares</p>
-                        <p>200 Trades</p>
-                    </div>
-                    <button class="pricing--table--button button-primary">Click Me</button>
-                </div>
-            </div>
-            <div class="pricing--table--card">
-                <h2 class="pricing--table--title">Advanced</h2>
-                <div class="pricing--table--price pricing--table--price--basic">
-                    <h1>$466</h1>
-                    <p>/mo</p>
-                </div>
-                <div class="pricing--table--deals">
-                    <div class="pricing--table--deals--titles">
-                        <p>Buying Power</p>
-                        <p>Profit Target</p>
-                        <p>Daily Max Loss</p>
-                        <p>Max Drawdown</p>
-                        <p>Size per Symbol</p>
-                        <p>Minimum Trades</p>
-                    </div>
-                    <div class="pricing--table--deals--right">
-                        <p>$150,000</p>
-                        <p>$9,000</p>
-                        <p>$750</p>
-                        <p>$5,000</p>
-                        <p>1,500 Shares</p>
-                        <p>200 Trades</p>
-                    </div>
-                    <button class="pricing--table--button pricing--table--button--basic button-primary"> Click
-                        Me</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="monthly--prices">
-        <div class="pricing--table--wrapper">
-            <div class="pricing--table--card">
-                <h2 class="pricing--table--title">Basic</h2>
-                <div class="pricing--table--price pricing--table--price--basic">
-                    <h1>$299</h1>
-                    <p>/mo</p>
-                </div>
-                <div class="pricing--table--deals">
-                    <div class="pricing--table--deals--titles">
-                        <p>Buying Power</p>
-                        <p>Profit Target</p>
-                        <p>Daily Max Loss</p>
-                        <p>Max Drawdown</p>
-                        <p>Size per Symbol</p>
-                        <p>Minimum Trades</p>
-                    </div>
-                    <div class="pricing--table--deals--right">
-                        <p>$25,000</p>
-                        <p>$1,500</p>
-                        <p>$200</p>
-                        <p>$1,000</p>
-                        <p>300 Shares</p>
-                        <p>200 Trades</p>
-                    </div>
-                    <button class="pricing--table--button button-primary pricing--table--button--basic">Click
-                        me</button>
-                </div>
-            </div>
-            <div class="pricing--table--card pricing--table--card--2">
-                <h2 class="pricing--table--title pricing--table--title--2">Standard</h2>
-                <div class="pricing--table--price pricing--table--price--2">
-
-                    <h1>$499
-                    </h1>
-                    <p>/mo</p>
-                </div>
-                <div class="pricing--table--deals pricing--table--deals--2">
-                    <div class="pricing--table--deals--titles">
-                        <p>Buying Power</p>
-                        <p>Profit Target</p>
-                        <p>Daily Max Loss</p>
-                        <p>Max Drawdown</p>
-                        <p>Size per Symbol</p>
-                        <p>Minimum Trades</p>
-                    </div>
-                    <div class="pricing--table--deals--right">
-                        <p>$100,000</p>
-                        <p>$6,000</p>
-                        <p>$500</p>
-                        <p>$3,000</p>
-                        <p>1,000 Shares</p>
-                        <p>200 Trades</p>
-                    </div>
-                    <button class="pricing--table--button button-primary">Click Me</button>
-                </div>
-            </div>
-            <div class="pricing--table--card">
-                <h2 class="pricing--table--title">Advanced</h2>
-                <div class="pricing--table--price pricing--table--price--basic">
-                    <h1>$699</h1>
-                    <p>/mo</p>
-                </div>
-                <div class="pricing--table--deals">
-                    <div class="pricing--table--deals--titles">
-                        <p>Buying Power</p>
-                        <p>Profit Target</p>
-                        <p>Daily Max Loss</p>
-                        <p>Max Drawdown</p>
-                        <p>Size per Symbol</p>
-                        <p>Minimum Trades</p>
-                    </div>
-                    <div class="pricing--table--deals--right">
-                        <p>$150,000</p>
-                        <p>$9,000</p>
-                        <p>$750</p>
-                        <p>$5,000</p>
-                        <p>1,500 Shares</p>
-                        <p>200 Trades</p>
-                    </div>
-                    <button class="pricing--table--button pricing--table--button--basic button-primary"> Click
-                        Me</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="footer">
-        <div class="footer--wrapper">
-            <div class="footer--block--1">
-
-            </div>
-            <div class="footer--block--2"></div>
-            <div class="footer--block--3"></div>
-        </div>
-    </section>
-</body>
-<script src="js/switchPrice.js"></script>
-
+	<body>
+		<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+		<h2>
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+			Possimus quidem itaque asperiores corrupti accusantium accusamus
+			voluptates, nostrum ab!
+		</h2>
+		<h3>
+			Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+			consectetur adipisicing elit. Consequuntur, voluptate.
+		</h3>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			Accusamus porro modi tempora voluptatem fugiat delectus eveniet.
+			Assumenda officiis quibusdam, beatae minima aspernatur nesciunt
+			quos sint, laudantium eveniet error corporis consectetur.
+		</p>
+		<button class="button-primary">Click me</button>
+		<button class="button-secondary animated--upanddown">Click me</button>
+		<div class="price--switch--box">
+			<label for="monthly" class="radio">
+				<input
+					type="radio"
+					name="myRadioField"
+					id="monthly"
+					class="radio--input"
+				/>
+				<div class="radio--radio"></div>
+				<h2>1 Month</h2>
+			</label>
+			<label for="quarterly" class="radio">
+				<input
+					type="radio"
+					name="myRadioField"
+					id="quarterly"
+					class="radio--input"
+					checked="checked"
+				/>
+				<div class="radio--radio"></div>
+				<h2>3 Months <span>(33% off)</span></h2>
+			</label>
+		</div>
+		<div class="steps--grid quarterly--prices">
+			<div class="item item--1">TITLE</div>
+			<div class="item item--2">image-1</div>
+			<div class="item item--3">text-1</div>
+			<div class="item item--4">image-2</div>
+			<div class="item item--5">text-2</div>
+			<div class="item item--6">image-3</div>
+			<div class="item item--7">text-3</div>
+			<div class="item item--8"></div>
+		</div>
+		<div
+			class="steps--grid--2 monthly--prices"
+			style="display: none; background-color: red"
+		>
+			<div class="item item--1">TITLE</div>
+			<div class="item item--2">image-1</div>
+			<div class="item item--3">text-1</div>
+			<div class="item item--4">image-2</div>
+			<div class="item item--5">text-2</div>
+			<div class="item item--6">image-3</div>
+			<div class="item item--7">text-3</div>
+			<div class="item item--8"></div>
+		</div>
+		<section class="quarterly--prices">
+			<div class="pricing--table--wrapper">
+				<div class="pricing--table--card">
+					<h2 class="pricing--table--title">Basic</h2>
+					<div
+						class="
+							pricing--table--price
+							pricing--table--price--basic
+						"
+					>
+						<h1>$198</h1>
+						<p>/mo</p>
+					</div>
+					<div class="pricing--table--deals">
+						<div class="pricing--table--deals--titles">
+							<p>Buying Power</p>
+							<p>Profit Target</p>
+							<p>Daily Max Loss</p>
+							<p>Max Drawdown</p>
+							<p>Size per Symbol</p>
+							<p>Minimum Trades</p>
+						</div>
+						<div class="pricing--table--deals--right">
+							<p>$25,000</p>
+							<p>$1,500</p>
+							<p>$200</p>
+							<p>$1,000</p>
+							<p>300 Shares</p>
+							<p>200 Trades</p>
+						</div>
+						<button
+							class="
+								pricing--table--button
+								button-primary
+								pricing--table--button--basic
+							"
+						>
+							Click me
+						</button>
+					</div>
+				</div>
+				<div class="pricing--table--card pricing--table--card--2">
+					<h2
+						class="
+							pricing--table--title
+							pricing--table--title--2
+						"
+					>
+						Standard
+					</h2>
+					<div
+						class="
+							pricing--table--price
+							pricing--table--price--2
+						"
+					>
+						<h1>$333</h1>
+						<p>/mo</p>
+					</div>
+					<div
+						class="
+							pricing--table--deals
+							pricing--table--deals--2
+						"
+					>
+						<div class="pricing--table--deals--titles">
+							<p>Buying Power</p>
+							<p>Profit Target</p>
+							<p>Daily Max Loss</p>
+							<p>Max Drawdown</p>
+							<p>Size per Symbol</p>
+							<p>Minimum Trades</p>
+						</div>
+						<div class="pricing--table--deals--right">
+							<p>$100,000</p>
+							<p>$6,000</p>
+							<p>$500</p>
+							<p>$3,000</p>
+							<p>1,000 Shares</p>
+							<p>200 Trades</p>
+						</div>
+						<button
+							class="pricing--table--button button-primary"
+						>
+							Click Me
+						</button>
+					</div>
+				</div>
+				<div class="pricing--table--card">
+					<h2 class="pricing--table--title">Advanced</h2>
+					<div
+						class="
+							pricing--table--price
+							pricing--table--price--basic
+						"
+					>
+						<h1>$466</h1>
+						<p>/mo</p>
+					</div>
+					<div class="pricing--table--deals">
+						<div class="pricing--table--deals--titles">
+							<p>Buying Power</p>
+							<p>Profit Target</p>
+							<p>Daily Max Loss</p>
+							<p>Max Drawdown</p>
+							<p>Size per Symbol</p>
+							<p>Minimum Trades</p>
+						</div>
+						<div class="pricing--table--deals--right">
+							<p>$150,000</p>
+							<p>$9,000</p>
+							<p>$750</p>
+							<p>$5,000</p>
+							<p>1,500 Shares</p>
+							<p>200 Trades</p>
+						</div>
+						<button
+							class="
+								pricing--table--button
+								pricing--table--button--basic
+								button-primary
+							"
+						>
+							Click Me
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="monthly--prices">
+			<div class="pricing--table--wrapper">
+				<div class="pricing--table--card">
+					<h2 class="pricing--table--title">Basic</h2>
+					<div
+						class="
+							pricing--table--price
+							pricing--table--price--basic
+						"
+					>
+						<h1>$299</h1>
+						<p>/mo</p>
+					</div>
+					<div class="pricing--table--deals">
+						<div class="pricing--table--deals--titles">
+							<p>Buying Power</p>
+							<p>Profit Target</p>
+							<p>Daily Max Loss</p>
+							<p>Max Drawdown</p>
+							<p>Size per Symbol</p>
+							<p>Minimum Trades</p>
+						</div>
+						<div class="pricing--table--deals--right">
+							<p>$25,000</p>
+							<p>$1,500</p>
+							<p>$200</p>
+							<p>$1,000</p>
+							<p>300 Shares</p>
+							<p>200 Trades</p>
+						</div>
+						<button
+							class="
+								pricing--table--button
+								button-primary
+								pricing--table--button--basic
+							"
+						>
+							Click me
+						</button>
+					</div>
+				</div>
+				<div class="pricing--table--card pricing--table--card--2">
+					<h2
+						class="
+							pricing--table--title
+							pricing--table--title--2
+						"
+					>
+						Standard
+					</h2>
+					<div
+						class="
+							pricing--table--price
+							pricing--table--price--2
+						"
+					>
+						<h1>$499</h1>
+						<p>/mo</p>
+					</div>
+					<div
+						class="
+							pricing--table--deals
+							pricing--table--deals--2
+						"
+					>
+						<div class="pricing--table--deals--titles">
+							<p>Buying Power</p>
+							<p>Profit Target</p>
+							<p>Daily Max Loss</p>
+							<p>Max Drawdown</p>
+							<p>Size per Symbol</p>
+							<p>Minimum Trades</p>
+						</div>
+						<div class="pricing--table--deals--right">
+							<p>$100,000</p>
+							<p>$6,000</p>
+							<p>$500</p>
+							<p>$3,000</p>
+							<p>1,000 Shares</p>
+							<p>200 Trades</p>
+						</div>
+						<button
+							class="pricing--table--button button-primary"
+						>
+							Click Me
+						</button>
+					</div>
+				</div>
+				<div class="pricing--table--card">
+					<h2 class="pricing--table--title">Advanced</h2>
+					<div
+						class="
+							pricing--table--price
+							pricing--table--price--basic
+						"
+					>
+						<h1>$699</h1>
+						<p>/mo</p>
+					</div>
+					<div class="pricing--table--deals">
+						<div class="pricing--table--deals--titles">
+							<p>Buying Power</p>
+							<p>Profit Target</p>
+							<p>Daily Max Loss</p>
+							<p>Max Drawdown</p>
+							<p>Size per Symbol</p>
+							<p>Minimum Trades</p>
+						</div>
+						<div class="pricing--table--deals--right">
+							<p>$150,000</p>
+							<p>$9,000</p>
+							<p>$750</p>
+							<p>$5,000</p>
+							<p>1,500 Shares</p>
+							<p>200 Trades</p>
+						</div>
+						<button
+							class="
+								pricing--table--button
+								pricing--table--button--basic
+								button-primary
+							"
+						>
+							Click Me
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="test--block">
+			<div class="test--block--block"></div>
+		</section>
+		<section class="footer">
+			<div class="footer--wrapper">
+				<div class="footer--block--1"></div>
+				<div class="footer--block--2"></div>
+				<div class="footer--block--3"></div>
+			</div>
+		</section>
+	</body>
+	<script src="js/switchPrice.js"></script>
 </html>

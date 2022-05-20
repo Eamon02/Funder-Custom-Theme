@@ -7,11 +7,11 @@ $font-primary: 'TT Commons Regular',
     sans-serif;
 
 //Font sizing
-$xl: clamp(56px, 6vw + 1rem, 106px);
-$large: clamp(42px, 5vw + 1rem, 72px);
-$medium: clamp(24px, 2vw + 1rem, 36px);
-$regular: clamp(20px, 1vw + 1rem, 28px);
-$light: clamp(18px, .5vw + 1rem, 24px);
+$xl: clamp(56px, 6vw + 1rem, 106px) !important;
+$large: clamp(42px, 5vw + 1rem, 72px) !important;
+$medium: clamp(24px, 2vw + 1rem, 36px) !important;
+$regular: clamp(20px, 1vw + 1rem, 28px) !important;
+$light: clamp(18px, .5vw + 1rem, 24px) !important;
 
 //Font Weight
 $bold: 600;
