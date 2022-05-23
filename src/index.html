@@ -20,6 +20,12 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 		<title>Fundr Test Doc</title>
 	</head>
 
@@ -346,15 +352,203 @@
 				</div>
 			</div>
 		</section>
-		<section class="test--block">
+		<!-- <section class="test--block">
 			<div class="test--block--block"></div>
-		</section>
-		<section class="footer">
-			<div class="footer--wrapper">
-				<div class="footer--block--1"></div>
-				<div class="footer--block--2"></div>
-				<div class="footer--block--3"></div>
+		</section> -->
+		<section>
+			<!-- Swiper -->
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="pricing--table--mobile--card">
+							<h2 class="pricing--table--mobile--title">
+								Basic
+							</h2>
+							<div
+								class="
+									pricing--table--mobile--price
+									pricing--table--mobile--price--basic
+								"
+							>
+								<h1>$198</h1>
+								<p>/mo</p>
+							</div>
+							<div class="pricing--table--mobile--deals">
+								<div
+									class="
+										pricing--table--mobile--deals--titles
+									"
+								>
+									<p>Buying Power</p>
+									<p>Profit Target</p>
+									<p>Daily Max Loss</p>
+									<p>Max Drawdown</p>
+									<p>Size per Symbol</p>
+									<p>Minimum Trades</p>
+								</div>
+								<div
+									class="
+										pricing--table--mobile--deals--right
+									"
+								>
+									<p>$25,000</p>
+									<p>$1,500</p>
+									<p>$200</p>
+									<p>$1,000</p>
+									<p>300 Shares</p>
+									<p>200 Trades</p>
+								</div>
+								<!-- <button
+									class="
+										pricing--table--mobile--button
+										button-primary
+										pricing--table--mobile--button--basic
+									"
+								>
+									Click me
+								</button> -->
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div
+							class="
+								pricing--table--mobile--card
+								pricing--table--mobile--card--2
+							"
+						>
+							<h2
+								class="
+									pricing--table--mobile--title
+									pricing--table--mobile--title--2
+								"
+							>
+								Standard
+							</h2>
+							<div
+								class="
+									pricing--table--mobile--price
+									pricing--table--mobile--price--2
+								"
+							>
+								<h1>$499</h1>
+								<p>/mo</p>
+							</div>
+							<div
+								class="
+									pricing--table--mobile--deals
+									pricing--table--mobile--deals--2
+								"
+							>
+								<div
+									class="
+										pricing--table--mobile--deals--titles
+									"
+								>
+									<p>Buying Power</p>
+									<p>Profit Target</p>
+									<p>Daily Max Loss</p>
+									<p>Max Drawdown</p>
+									<p>Size per Symbol</p>
+									<p>Minimum Trades</p>
+								</div>
+								<div
+									class="
+										pricing--table--mobile--deals--right
+									"
+								>
+									<p>$100,000</p>
+									<p>$6,000</p>
+									<p>$500</p>
+									<p>$3,000</p>
+									<p>1,000 Shares</p>
+									<p>200 Trades</p>
+								</div>
+								<!-- <button
+									class="
+										pricing--table--mobile--button
+										button-primary
+									"
+								>
+									Click Me
+								</button> -->
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="pricing--table--mobile--card">
+							<h2 class="pricing--table--mobile--title">
+								Advanced
+							</h2>
+							<div
+								class="
+									pricing--table--mobile--price
+									pricing--table--mobile--price--basic
+								"
+							>
+								<h1>$699</h1>
+								<p>/mo</p>
+							</div>
+							<div class="pricing--table--mobile--deals">
+								<div
+									class="
+										pricing--table--mobile--deals--titles
+									"
+								>
+									<p>Buying Power</p>
+									<p>Profit Target</p>
+									<p>Daily Max Loss</p>
+									<p>Max Drawdown</p>
+									<p>Size per Symbol</p>
+									<p>Minimum Trades</p>
+								</div>
+								<div
+									class="
+										pricing--table--mobile--deals--right
+									"
+								>
+									<p>$150,000</p>
+									<p>$9,000</p>
+									<p>$750</p>
+									<p>$5,000</p>
+									<p>1,500 Shares</p>
+									<p>200 Trades</p>
+								</div>
+								<!-- <button
+									class="
+										pricing--table--mobile--button
+										pricing--table--mobile--button--basic
+										button-primary
+									"
+								>
+									Click Me
+								</button> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
 			</div>
+
+			<!-- Swiper JS -->
+			<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+			<!-- Initialize Swiper -->
+			<script>
+				var swiper = new Swiper('.mySwiper', {
+					slidesPerView: 1,
+					// spaceBetween: -30,
+					slidesPerGroup: 1,
+					loop: true,
+					loopFillGroupWithBlank: true,
+					centeredSlides: true,
+					pagination: {
+						el: '.swiper-pagination',
+						clickable: true,
+						dynamicBullets: true,
+					},
+				});
+			</script>
 		</section>
 	</body>
 	<script src="js/switchPrice.js"></script>
