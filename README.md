@@ -16,4 +16,5 @@ Funder Trading is a new prop trading business. Subscribers of Funder have a chan
 ## License
 
 Copyright ©2022 [Eamon McHugh](https://github.com/Eamon02)
+
 This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
