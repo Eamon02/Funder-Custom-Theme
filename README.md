@@ -6,7 +6,7 @@ A custom Wordpress theme initiated with PHP and built with HTML and SCSS to maxi
 
 ## Goal
 
-Funder Trading is a new prop trading business. Subscribers of Funder have a chance to prove their trading skills on a mock stock exchange for the possibility of being funded to trade, for real. The goal of this project was to design and develop a website to motivate potential customer into taking the challenge, while maintaining full control over design aspects, unachieveable with Wordpress builders.
+Funder Trading is a new proprietary trading business. Subscribers of Funder have a chance to prove their trading skills on a mock stock exchange for the possibility of being funded to trade, for real. The goal of this project was to design and develop a website to motivate potential customers into taking the challenge, while maintaining full control over design aspects, unachieveable with Wordpress builders alone.
 
 ## Demo
 ![Funder Custom Theme Demo](./Funder-Trading-Home-Demo.jpg)
