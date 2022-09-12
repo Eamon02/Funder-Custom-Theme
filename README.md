@@ -2,7 +2,7 @@
 
 A custom Wordpress theme initiated with PHP and bilt with HTML and SCSS to maximize control over all design aspects and optimized for more responsive designs.
 
-# [Live Site](https://fundertrading.com/)
+[Live Site](https://fundertrading.com/)
 
 ## Goal
 
